@@ -1,0 +1,377 @@
+.fintech-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #000;
+          color: #fff;
+          padding: 50px;
+          font-family: 'Inter', sans-serif;
+          height: 135vh;
+          padding-top: 0;
+          box-sizing: border-box;
+          flex-wrap: wrap;
+}
+
+.text-section {
+          max-width: 45%;
+          margin-top: 4rem;
+          flex: 1;
+}
+
+.text-section h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          margin-top: 6rem;
+          font-family: 'Poppins', sans-serif;
+}
+
+.text-section p {
+          font-family: 'inter', sans-serif;
+          font-weight: 100;
+          font-size: 1.6rem;
+          line-height: 1.6;
+          color: white;
+          text-align: left;
+}
+
+.buttons {
+          margin-top: 20px;
+}
+
+.buttons button {
+          padding: 12px 24px;
+          border: none;
+          border-radius: 25px;
+          font-size: 1rem;
+          cursor: pointer;
+          font-weight: 600;
+          transition: all 0.3s ease;
+}
+
+.signup {
+          background-color: #b9d06f;
+          color: #000;
+          margin-right: 10px;
+          width: 14rem;
+          font-family: 'DM Sans', sans-serif;
+}
+
+.signup:hover {
+          background-color: #b2e600;
+}
+
+.watch {
+          background-color: #fff;
+          color: #000;
+          width: 14rem;
+          font-family: 'DM Sans', sans-serif;
+          margin-left: 1rem;
+}
+
+.watch:hover {
+          background-color: #ddd;
+}
+
+.graphics-section {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 20px;
+          flex: 1;
+}
+
+.graphics-sectionOne {
+          display: flex;
+          gap: 20px;
+          /* Added margin between cards */
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          /* Allow wrapping on smaller screens */
+}
+
+.card {
+          background: conic-gradient(from 250deg at 50% 80%, #1a1a1a 0deg, #222 100deg, #1a1a1a 360deg);
+          padding: 20px;
+          border-radius: 15px;
+          width: 260px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+          color: hsl(0, 0%, 100%);
+}
+
+.onetwo {
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+}
+
+.two p,
+.one p {
+          font-family: 'Orbitron', sans-serif;
+          font-size: .6rem;
+          margin-top: 30px;
+          margin-bottom: 5px;
+}
+
+.two h2,
+.one h2 {
+          font-family: 'Orbitron', sans-serif;
+          font-size: 1rem;
+          margin-top: 0;
+          margin-bottom: 0;
+}
+
+.card-header {
+          display: flex;
+          justify-content: space-between;
+}
+
+.visa-card {
+          position: relative;
+          overflow: hidden;
+          height: 110px;
+          width: 230px;
+          top: 3rem;
+          right: 2rem;
+}
+
+.visa-p {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 20px;
+}
+
+.image-container {
+          width: 65px;
+          height: 22px;
+          margin-right: 1rem;
+}
+
+.img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2px;
+}
+
+.visa-card::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 20px;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.rent-card {
+          position: relative;
+          border-radius: 2rem;
+          height: 90px;
+          width: 240px;
+          font-family: 'inter';
+}
+
+.rent-card h2 {
+          color: #cadd8b;
+}
+
+.progress-bar {
+          width: 100%;
+          height: 8px;
+          background: #444;
+          border-radius: 4px;
+}
+
+.chart-container {
+          background: #111;
+          padding: 20px;
+          border-radius: 35px;
+          width: 560px;
+          height: 280px;
+          text-align: center;
+          position: relative;
+          margin-top: 4rem;
+}
+
+.chart-header {
+          position: relative;
+}
+
+.chart-container svg {
+          width: 100%;
+          height: auto;
+}
+
+.number {
+          font-size: 1.4rem;
+          font-weight: lighter;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          position: relative;
+}
+
+.word {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select {
+          border-radius: 4px;
+          border: none;
+          background-color: #00000000;
+          color: #C3FF00;
+          height: 1.5rem;
+          position: relative;
+          left: 10rem;
+          margin: .3rem;
+          font-size: 11px;
+}
+
+@media (max-width: 1200px) {
+          .fintech-container {
+                    padding: 40px;
+          }
+
+          .text-section {
+                    max-width: 50%;
+          }
+
+          .graphics-sectionOne {
+                    gap: 15px;
+                    display: flex;
+          }
+
+          .card {
+                    width: 110px;
+                    margin: 2rem;
+
+          }
+
+          .chart-container {
+                    width: 100%;
+          }
+
+          .visa-card {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+          }
+
+          .rent-card {
+                    position: relative;
+          }
+}
+
+@media (max-width: 992px) {
+          .fintech-container {
+                    padding: 30px;
+                    flex-direction: column;
+                    height: auto;
+          }
+
+          .text-section {
+                    max-width: 100%;
+                    text-align: center;
+                    margin-top: 2rem;
+          }
+
+          .buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+          }
+
+          .graphics-sectionOne {
+                    justify-content: center;
+                    width: 50%;
+          }
+
+          .card {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    /* Added margin to separate cards */
+          }
+
+          .chart-container {
+                    width: 100%;
+                    margin-top: 2rem;
+          }
+
+          select {
+                    left: 0;
+                    margin: 0 0.5rem;
+                    font-size: 14px;
+          }
+
+          .rent-card {
+                    position: relative;
+
+          }
+}
+
+@media (max-width: 768px) {
+          .fintech-container {
+                    height: auto;
+                    padding: 30px;
+                    flex-direction: column;
+                    height: auto;
+          }
+
+          .text-section h1 {
+                    font-size: 2.5rem;
+          }
+
+          .text-section p {
+                    font-size: 1.4rem;
+          }
+
+          .buttons button {
+                    padding: 10px 20px;
+                    font-size: 0.9rem;
+          }
+
+          .card {
+                    width: 100%;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                    /* Added margin to separate cards */
+          }
+
+          .chart-container {
+                    width: 100%;
+                    height: 250px;
+                    margin-top: 1rem;
+          }
+
+          select {
+                    font-size: 12px;
+          }
+}
+
+@media (max-width: 576px) {
+          .text-section h1 {
+                    font-size: 2rem;
+          }
+
+          .text-section p {
+                    font-size: 1.2rem;
+          }
+
+          .buttons button {
+                    width: 100%;
+                    margin: 5px 0;
+          }
+
+          .card {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    /* Added margin to separate cards */
+          }
+
+          .chart-container {
+                    height: 220px;
+          }
+
+          select {
+                    font-size: 12px;
+                    width: 100%;
+                    left: 0;
+          }
+}

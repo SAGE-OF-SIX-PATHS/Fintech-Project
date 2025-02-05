@@ -9,11 +9,11 @@
           margin: 0;
           padding: 2rem 3rem;
           box-sizing: border-box;
-          position: fixed;
           width: 100%;
           top: 0;
           left: 0;
           z-index: 1000;
+          padding-bottom: .5rem;
 }
 
 span {
@@ -45,8 +45,9 @@ span {
 .nav-links a {
           text-decoration: none;
           color: white;
-          font-size: 1.5rem;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 2rem;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 1rem;
           transition: color 0.3s ease-in-out;
 }
 
