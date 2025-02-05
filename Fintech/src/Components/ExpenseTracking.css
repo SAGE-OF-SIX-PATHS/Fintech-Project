@@ -1,0 +1,145 @@
+.expense-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #222;
+          color: white;
+          padding: 30px;
+          border-radius: 15px;
+          gap: 20px;
+          width: 80%;
+          margin: 0 auto;
+          height: 50vh;
+          padding-left: 7rem;
+}
+
+.expense-text {
+          width: 40%;
+          font-family: Clash Display, 'sans serif';
+}
+
+.expense-text h2 {
+          font-size: 2rem;
+          font-weight: bold;
+}
+
+.expense-text p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+}
+
+.ChartContainer {
+          width: 80%;
+          height: 250px;
+          position: relative;
+          background: #222;
+          padding: 15px;
+          border-radius: 10px;
+          img {
+                    width: 100%;
+                    height: 100%;
+          }
+}
+
+.price-label {
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          color: black;
+          padding: 5px 10px;
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 10px;
+}
+
+.time-buttons {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 10px;
+}
+
+.time-buttons button {
+          background: #444;
+          color: white;
+          padding: 5px 12px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+}
+
+.time-buttons .active {
+          background: #faff00;
+          color: black;
+          font-weight: bold;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+          .expense-container {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 20px;
+                    height: 500px;
+          }
+
+          .expense-text {
+                    width: 85%;
+          }
+
+          .chart-container {
+                    width: 100%;
+          }
+
+          .expense-text h2 {
+                    font-size: 1.8rem;
+          }
+
+          .expense-text p {
+                    font-size: 1rem;
+          }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+          .expense-text h2 {
+                    font-size: 1.6rem;
+          }
+
+          .expense-text p {
+                    font-size: 0.9rem;
+          }
+
+          .price-label {
+                    font-size: 0.8rem;
+                    padding: 3px 8px;
+          }
+
+          .time-buttons button {
+                    font-size: 0.8rem;
+                    padding: 3px 8px;
+          }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+          .expense-text h2 {
+                    font-size: 1.4rem;
+          }
+
+          .expense-text p {
+                    font-size: 0.8rem;
+          }
+
+          .price-label {
+                    font-size: 0.7rem;
+          }
+
+          .time-buttons button {
+                    font-size: 0.7rem;
+          }
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section1 from "./Components/Section1";
 import Collaborations from "./Components/Collaborations";
+import ExpenseTracking from "./Components/ExpenseTracking";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Navbar />
       <Section1 />
       <Collaborations />
+      <ExpenseTracking />
+      
     </div>
   );
 }
