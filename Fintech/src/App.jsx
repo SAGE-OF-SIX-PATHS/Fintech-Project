@@ -2,16 +2,14 @@ import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section1 from "./Components/Section1";
-// import Prog from "./Components/Checkbox";
-// import Hero from "./components/Hero";
-// import Partners from "./components/Partners";
+import Collaborations from "./Components/Collaborations";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
       <Section1 />
-      {/* < Prog /> */}
+      <Collaborations />
     </div>
   );
 }

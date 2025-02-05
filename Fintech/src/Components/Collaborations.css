@@ -1,0 +1,99 @@
+.collaborations {
+          text-align: center;
+          background: black;
+          color: white;
+          padding: 30px;
+}
+
+.collab-text {
+          font-size: 1.8rem;
+          margin-bottom: 6rem;
+          font-weight: 400;
+          font-family: 'Inter', sans-serif;
+}
+
+.logos {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          align-items: center;
+          flex-wrap: wrap;
+          /* Ensures proper wrapping on smaller screens */
+          margin-bottom: 4rem;
+}
+
+.logo {
+          font-size: 3.6rem;
+          color: white;
+          transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+          transform: scale(1.1);
+}
+
+.features-title {
+          font-size: 3rem;
+          font-weight: bolder;
+          font-family: 'Poppins', sans-serif;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+          .collab-text {
+                    font-size: 1.6rem;
+                    margin-bottom: 5rem;
+          }
+
+          .logos {
+                    gap: 30px;
+          }
+
+          .logo {
+                    font-size: 3rem;
+          }
+
+          .features-title {
+                    font-size: 2.8rem;
+          }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+          .collab-text {
+                    font-size: 1.1rem;
+                    margin-bottom: 4rem;
+          }
+
+          .logos {
+                    gap: 25px;
+          }
+
+          .logo {
+                    font-size: 2.3rem;
+          }
+
+          .features-title {
+                    font-size: 2.5rem;
+          }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+          .collab-text {
+                    font-size: 1.2rem;
+                    margin-bottom: 3rem;
+          }
+
+          .logos {
+                    gap: 15px;
+          }
+
+          .logo {
+                    font-size: 2.4rem;
+          }
+
+          .features-title {
+                    font-size: 2rem;
+          }
+}
