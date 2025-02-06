@@ -1,0 +1,112 @@
+.feature-cards {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          padding: 40px;
+          flex-wrap: wrap;
+          font-family: "Clash Display", sans-serif;
+          max-width: 1200px;
+          margin: auto;
+}
+
+.feature-card1,
+.feature-card2 {
+          background-color: #141414;
+          color: white;
+          padding: 40px;
+          border-radius: 20px;
+          width: 40%;
+          min-width: 320px;
+          height: auto;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+          font-family: "Clash Display", sans-serif;
+}
+
+.feature-card1 {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card1 h2,
+.feature-card2 h2 {
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1.4;
+          margin-bottom: 15px;
+}
+
+.feature-card1 p,
+.feature-card2 p {
+          font-size: 1rem;
+          line-height: 1.6;
+}
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media (max-width: 1024px) {
+          .feature-cards {
+                    padding: 30px;
+                    gap: 15px;
+          }
+
+          .feature-card1,
+          .feature-card2 {
+                    width: 48%;
+                    padding: 35px;
+          }
+
+          .feature-card1 h2,
+          .feature-card2 h2 {
+                    font-size: 1.6rem;
+          }
+
+          .feature-card1 p,
+          .feature-card2 p {
+                    font-size: 0.95rem;
+          }
+}
+
+/* Small Screens (Tablets in Portrait Mode & Large Phones) */
+@media (max-width: 768px) {
+          .feature-cards {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+          }
+
+          .feature-card1,
+          .feature-card2 {
+                    width: 90%;
+                    padding: 30px;
+                    text-align: center;
+          }
+
+          .feature-card1 h2,
+          .feature-card2 h2 {
+                    font-size: 1.4rem;
+          }
+
+          .feature-card1 p,
+          .feature-card2 p {
+                    font-size: 0.9rem;
+          }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+
+          .feature-card1,
+          .feature-card2 {
+                    width: 100%;
+                    padding: 20px;
+          }
+
+          .feature-card1 h2,
+          .feature-card2 h2 {
+                    font-size: 1.3rem;
+          }
+
+          .feature-card1 p,
+          .feature-card2 p {
+                    font-size: 0.85rem;
+          }
+}

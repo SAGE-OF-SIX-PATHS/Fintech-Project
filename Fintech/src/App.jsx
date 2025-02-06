@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Section1 from "./Components/Section1";
 import Collaborations from "./Components/Collaborations";
 import ExpenseTracking from "./Components/ExpenseTracking";
+import FeatureCards from "./Components/Cards";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Section1 />
       <Collaborations />
       <ExpenseTracking />
-      
+      <FeatureCards />
     </div>
   );
 }
