@@ -25,6 +25,16 @@
 
 .feature-card1 {
           border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+          display: flex;
+          flex-direction: column;
+          margin-top: 0; 
+          h2 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    line-height: 1.4;
+                    margin-bottom: 15px;
+                    text-align: start;
+          }
 }
 
 .feature-card1 h2,

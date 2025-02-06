@@ -1,0 +1,180 @@
+.investment-container {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          padding: 40px;
+          flex-wrap: wrap;
+          font-family: "Clash Display", sans-serif;
+}
+
+/* Left Card - Assets */
+.investment-card {
+          background-color: #141414;
+          color: white;
+          padding: 30px;
+          border-radius: 20px;
+          width: 40%;
+          height: 22rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+}
+
+/* SVG Container */
+.chart-container {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.chart-svg {
+          width: 100%;
+          height: auto;
+          max-height: 70%;
+}
+
+/* Tooltip */
+.tooltip {
+          position: absolute;
+          top: 25%;
+          right: 15%;
+          background: white;
+          color: black;
+          font-size: 0.9rem;
+          padding: 5px 10px;
+          border-radius: 10px;
+          font-weight: bold;
+          text-align: center;
+}
+
+/* Balance Info */
+.balance-info {
+          margin-top: 10px;
+}
+
+.balance-title {
+          font-size: 1rem;
+          font-weight: bold;
+}
+
+.total-balance {
+          font-size: 1.8rem;
+          font-weight: bold;
+}
+
+.growth-percentage {
+          background: rgba(0, 255, 100, 0.3);
+          padding: 3px 6px;
+          border-radius: 5px;
+}
+
+.sub-balance {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.6);
+}
+
+/* Timeframe */
+.timeframe {
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.9rem;
+          color: rgba(255, 255, 255, 0.6);
+}
+
+/* Right Side - Investment Text */
+.investment-text {
+          background-color: #141414;
+          color: white;
+          padding: 50px;
+          border-radius: 20px;
+          width: 40%;
+          height: 22rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+}
+
+.investment-text h1 {
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1.4;
+          margin-bottom: 15px;
+}
+
+.investment-text p {
+          line-height: 1.6;
+          font-size: 1rem;
+}
+
+.investment-text .highlight {
+          font-size: inherit;
+          font-weight: inherit;
+          color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+          .investment-card,
+          .investment-text {
+                    width: 350px;
+                    height: auto;
+          }
+
+          .investment-text h1 {
+                    font-size: 1.6rem;
+          }
+
+          .investment-text p {
+                    font-size: 0.9rem;
+          }
+}
+
+@media (max-width: 768px) {
+          .investment-container {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
+          }
+
+          .investment-card,
+          .investment-text {
+                    width: 90%;
+                    min-width: 70%;
+                    padding: 20px;
+                    font-size: 1rem;
+          }
+
+          .chart-svg {
+                    width: 100%;
+                    max-height: 80%;
+          }
+
+          .investment-text h1 {
+                    font-size: 1.5rem;
+          }
+
+          .investment-text p {
+                    font-size: 0.85rem;
+          }
+}
+
+@media (max-width: 480px) {
+
+          .investment-card,
+          .investment-text {
+                    width: 100%;
+                    padding: 20px;
+          }
+
+          .investment-text h1 {
+                    font-size: 1.3rem;
+          }
+
+          .investment-text p {
+                    font-size: 0.8rem;
+          }
+}

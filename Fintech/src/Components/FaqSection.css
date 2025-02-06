@@ -1,0 +1,128 @@
+.faq-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          padding: 40px;
+          background-color: black;
+          color: white;
+          flex-wrap: wrap;
+          font-family: "Clash Display", sans-serif;
+}
+
+/* Left Side - FAQ Section */
+.faq-content {
+          width: 50%;
+          min-width: 350px;
+}
+
+.faq-title {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold;
+}
+
+.faq-list {
+          margin-top: 20px;
+}
+
+.faq-item {
+          cursor: pointer;
+          padding: 10px 0;
+}
+
+.faq-question {
+          font-size: 1.5rem;
+          font-weight: 500;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+
+.faq-icon {
+          font-size: 1.3rem;
+}
+
+.faq-answer {
+          margin-top: 10px;
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.8);
+          line-height: 1.5;
+}
+
+.faq-divider {
+          border: 0.5px solid rgba(255, 255, 255, 0.3);
+          margin-top: 10px;
+}
+
+/* Right Side - FAQ Image */
+.faq-image-container {
+          width: 40%;
+          height: 500px;
+          min-width: 200px;
+}
+
+.faq-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+          .faq-content {
+                    width: 90%;
+          }
+
+          .faq-title {
+                    font-size: 2rem;
+          }
+
+          .faq-question {
+                    font-size: 1.1rem;
+          }
+
+          .faq-image-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+          }
+
+          .faq-image {
+                    width: 80%;
+          }
+}
+
+@media (max-width: 768px) {
+          .faq-container {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+          }
+
+          .faq-content {
+                    width: 100%;
+          }
+
+          .faq-image {
+                    width: 100%;
+          }
+}
+
+@media (max-width: 480px) {
+          .faq-title {
+                    font-size: 1.8rem;
+          }
+
+          .faq-question {
+                    font-size: 1rem;
+          }
+
+          .faq-answer {
+                    font-size: 0.9rem;
+          }
+
+          .faq-image {
+                    width: 100%;
+          }
+}

@@ -1,0 +1,126 @@
+.feature-cards {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          padding: 40px;
+          flex-wrap: wrap;
+          font-family: "Clash Display", sans-serif;
+}
+
+.feature-card1,
+.feature-card2 {
+          background-color: #141414;
+          color: white;
+          padding: 50px;
+          border-radius: 20px;
+          width: 40%;
+          height: 20rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+          font-size: 1.5rem;
+}
+
+.feature-card1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+}
+
+/* Make SVG fully responsive */
+.chart-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.chart-svg {
+          width: 90%;
+          height: auto;
+          max-height: 90%;
+}
+
+/* Right Side - Investment Text */
+.feature-card2 h1 {
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1.4;
+          margin-bottom: 15px;
+}
+
+.feature-card2 p {
+          line-height: 1.6;
+          font-size: 1rem;
+}
+
+/* Remove special styling for 'FinTrack' */
+.feature-card2 .highlight {
+          font-size: inherit;
+          font-weight: inherit;
+          color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+          .feature-card1,
+          .feature-card2 {
+                    width: 350px;
+          }
+
+          .feature-card2 h1 {
+                    font-size: 1.6rem;
+          }
+
+          .feature-card2 p {
+                    font-size: 0.9rem;
+          }
+}
+
+@media (max-width: 768px) {
+          .feature-cards {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
+          }
+
+          .feature-card1,
+          .feature-card2 {
+                    width: 90%;
+                    min-width: 70%;
+                    padding: 20px;
+                    font-size: 1rem;
+          }
+
+          .chart-svg {
+                    width: 100%;
+                    max-height: 80%;
+          }
+
+          .feature-card2 h1 {
+                    font-size: 1.5rem;
+          }
+
+          .feature-card2 p {
+                    font-size: 0.85rem;
+          }
+}
+
+@media (max-width: 480px) {
+
+          .feature-card1,
+          .feature-card2 {
+                    width: 100%;
+                    padding: 20px;
+          }
+
+          .feature-card2 h1 {
+                    font-size: 1.3rem;
+          }
+
+          .feature-card2 p {
+                    font-size: 0.8rem;
+          }
+}
