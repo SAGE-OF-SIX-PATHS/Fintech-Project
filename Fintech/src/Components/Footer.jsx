@@ -10,7 +10,7 @@ const Footer = () => {
                                         <div className="footer-content">
                                                   <div className="footer-logo-section">
                                                             <div className="footer-logo">
-                                                                      <img src="/images/Logo.png" alt="FinTrack Logo" />
+                                                                      <img src="https://i.imgur.com/Mvf0BJ9.png" alt="FinTrack Logo" />
                                                                       <h2>FinTrack</h2>
                                                             </div>
                                                             <p className="footer-description">
