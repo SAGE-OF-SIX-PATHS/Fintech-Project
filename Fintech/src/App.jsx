@@ -9,7 +9,6 @@ import Investment from "./Components/InvestmentCard";
 import FAQSection from "./Components/FaqSection";
 import Testimonials from "./Components/Testimimonials";
 import Footer from "./Components/Footer";
-import RadioBox from "./Components/Radio";
 function App() {
   return (
     <div className="app">
@@ -22,7 +21,6 @@ function App() {
       <FAQSection />
       <Testimonials />
       <Footer />
-      <RadioBox />
     </div>
   );
 }
